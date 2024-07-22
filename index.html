@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <style>
+html::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background: black;
+}
+@keyframes opac {
+    from{
+        display: none;
+    }
+    to{
+        display: 0;
+    }
+}
+@keyframes timing {
+    100% , 50% , 0%{
+        display: 0;
+    }
+}
+@font-face {
+    font-family: DefaultFont;
+    src: url(./Yekan.ttf);
+}
+@font-face {
+    font-family: homa;
+    src: url(./B\ Homa_0.ttf);
+}
+#brn{
+    height: 165px;
+    width: fit-content;
+    margin-left: -10px;
+    margin-top: -147px;
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: -48px;
+    filter: brightness(120%);
+    display: none;
+    background-image: url(./src/brn.gif);
+    
+}
+.supn{
+    background-color: #f1f1f1;
+    height: 34px;
+    margin-top: 800px;
+    width: 810px;
+    margin-left: -10px;
+    overflow: hidden;
+    padding-top: -10px;
+    box-sizing: border-box;
+    position: absolute;
+}
+.bren{
+    height: 34px;
+    overflow: hidden;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 1px;
+    margin-top: 835px;
+ }
+ .title{
+    height: 30px;
+    width: 115px;
+    background-color: orangered;
+    border-radius: 225px 335px 0px 225px;
+    margin-bottom: -800px;
+    margin-left: 720px;
+    margin-top: 770px;
+    color: white;
+    padding-left: 18px;
+    box-sizing: border-box;
+    font-family: DefaultFont;
+    position: absolute;
+    padding-top: 3px;
+    font-size: 18px;
+    font-weight: light;
+    display: none;
+}
+.supText{
+    color: #b10404;
+    margin-top: -5px;
+    font-family: DefaultFont;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    font-weight: lighter;
+    position: absolute;
+
+}
+.gb{
+    height: 60px;
+    width: 60px;
+    background: radial-gradient(#00d8e2,#068f9a );
+    margin-bottom: 100px;
+    margin-left: 780px;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: 788px;
+    display: 0;
+    cursor: default;
+    zoom: 90%;
+}
+.logo{
+    margin-left: 840px;
+    clip-path: circle();
+}
+.time{
+    box-sizing: border-box;
+    padding-top: -21px;
+    padding-left: 0.2em;
+    padding-right: 0.3em;
+    color: rgb(255, 255, 255);
+    font-family: homa;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 22px;
+    position: absolute;
+    animation: timing 1s infinite;
+    margin-top: 0;
+    position: absolute;
+    align-items: center;
+    /* letter-spacing: 0.5px; */
+    font-stretch: ultra-condensed;
+}
+.irinn{
+    height: 76px;
+    width: 76px;
+    margin-top: -6px;
+    margin-left: -6px;
+    filter: contrast(125%);
+}
+.all{
+    margin-top: -1000px;
+    margin-left: -90px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+/* .matter{
+    height: 25px;
+    width: 620px;
+    background-color: #093B40;
+    margin-left: -10px;
+    padding-left: 420px;
+    color: white;
+    position: absolute;
+    box-sizing: border-box;
+    font-family: DefaultFont;
+} */
+.dot{
+    color: orangered;
+    margin-left: -30px;
+    padding-top: 80px;
+    display: contents;
+    font-size: 25px;
+    height: 34px;
+    background-color: black;
+    padding-top: 1000px;
+}
+ /* .line{
+    height: 20px;
+    width: 140px;
+    background-color: rgb(0, 0, 0);
+    rotate: 45deg;
+    margin-top: -405px;
+    margin-left: -40px;
+    padding-left: 50px;
+    box-sizing: border-box;   
+    position: absolute;     
+}  */
+.zone{
+    height: 35px;
+    width: 105px;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -35px;
+    /* background-image: url(./src/brn.gif); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(110%);
+}
+.all{
+    margin-top: -380px;
+    margin-left: -10px;
+    user-select: none;
+    overflow: hidden;
+    zoom: 90%;
+}
+::selection{
+    background: transparent;
+}
+.all:hover{
+    cursor: default;
+}
+marquee{
+    position: relative;
+}
+.supText2{
+    color: #ff0000;
+    font-size: 20px;
+    margin-left: -9.5%;
+    margin-top: -20px;
+    font-family: DefaultFont;
+    font-weight: lighter;
+    position: sticky;
+}
+.sp{
+    display:contents;
+    margin-top: 20px;
+    content-visibility: auto;
+    color: #ec0909;
+    font-size: 21px;
+    margin-left: -9.5%;
+    margin-top: 33px;
+    font-family: DefaultFont;
+    font-weight: light;
+}       
+/* @media screen and (max-width:512rem){
+    .gb{
+        margin-left: 670px;
+    }
+    .logo{
+        margin-left: 720px;
+    }
+    .supn{
+        width: 700px;
+    }
+    .title{
+        box-sizing: border-box;
+        margin-left: 600px;
+        padding-top: -10rem;
+    }
+    h1 .sp{
+        margin-top: 5rem;
+        position:sticky;
+    }
+} */
+ .sp{
+    margin-top: -9px;
+    align-content: center;
+    font-family: DefaultFont;
+    font-weight: lighter;
+ }
+ @media screen and (max-width:500px){
+    .time{
+        padding-top: -10px;
+    }
+ }
+ .supText3{
+    font-weight:lighter;
+ }
+ .allsup{
+    margin-top: -4px;
+    box-sizing: 0;
+    height: 44px;
+    position: relative;
+ }
+ .dotd{
+    position: relative;
+    display: contents;
+    background-color: black;
+    padding-bottom: 20px;
+    position: absolute;
+    box-sizing: content-box;
+    margin-top: 110px;
+    transform:translate(200% , 0%);
+ }
+ .live{
+    box-sizing: border-box;
+    background-color: #02565E;
+    height: 30px;
+    width: 140px;
+    border-radius: 35px 0 0 0;
+    margin-left: 86%;
+    margin-top: 380px;
+    font-family: DefaultFont;
+    padding-left: 12px;
+    padding-top: 5px;
+    font-size: 14px;
+    color: rgb(234, 232, 232);
+    font-weight: lighter;
+    position: absolute;
+    display: none;
+ }
+
+
+ 
+ 
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('img/videoframe.jpg') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: 0;
+}
+img{
+    position: absolute;
+    width: 200px;
+    margin-top: 300px;
+    margin-left: -10px;
+}
+ 
+    </style>
+
+<video loop autoplay src="*" class="fullscreen-bg__video">
+</video>
+
+<!-- <img src="./line.svg" alt=""> -->
+    <div class="live">زنده</div>
+    <div class="all" id="all">
+        <div class="matter"></div>
+        <div class="title" id="title">خبر فوری</div>
+        <div class="supn" id="supp">
+            <marquee id="marq" behavior="" direction="right">    
+                <div class="allsup">
+                    <h1 class="sp supText">چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</h1>
+                    <div class="dotd">
+                        <sup class="dot dot1" id="dot1"><sup></sup>  ●  </sup>
+                    </div>
+                        <h1 class="sp supText2">متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</h1>
+                    <div class="dotd">
+                        <sup class="dot dot2" id="dot2"><sup></sup>  ●  </sup>
+                    </div>
+                    <h1 class="sp supText3">لورم ایپسوم</h1>
+                </div>
+            </marquee>
+        </div>
+        <div class="zone">
+            <video class="bren" id="bre" src="./bren.mp4" autoplay loop muted></video>
+        </div>
+    </div>
+    <div class="show">
+        <div class="gb logo" id="gb1">
+        <video class="logoAnim irinn" src="./irinn.mp4" autoplay loop muted></video>
+    </div>
+    <div class="gb" id="gb2"><center class="time" id="time">--:--</center></div>
+    </div>
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        let div = document.querySelector(".time")
+function getTime(){
+        let date = new Date()
+        let time = `${date.getHours()}:${date.getMinutes()}`
+        let secondTime = `${date.getHours()}:0${date.getMinutes()}`
+        let thirdTime = `0${date.getHours()}:0${date.getMinutes()}`
+        if(date.getMinutes()<10){
+            return secondTime
+        }
+        if(date.getHours()<10){
+            if(date.getMinutes()<10){
+                 return thirdTime
+            }
+            else{
+                return `0${date.getHours()}:${date.getMinutes()}`
+            }
+        }
+        else{
+            return time
+        }
+    if(date.getHours()<10){
+        return `0${date.getHours()}:${date.getMinutes()}`
+    }
+  
+        
+    }
+if(navigator.userAgent.search("Windows") === 13){
+    let txttime = document.getElementById("time")
+    txttime.style.marginTop = '-10px'
+    txttime.style.marginInline = '0.05em'
+
+    document.querySelectorAll(".dot").forEach(
+        (e)=>{
+            e.innerHTML = `  ●  `
+        }
+    )
+    let all = document.getElementById("all")
+    all.style.marginTop = `-350px`
+
+    
+}
+let sp1 = document.querySelector(".supText")
+let sp2 = document.querySelector(".supText2")
+let sp3 = document.querySelector(".supText3")
+let dot1 = document.getElementById("dot1")
+let dot2 = document.getElementById("dot2")
+if(sp1.innerHTML == false){
+    dot1.style.display = 'none'
+}
+if(sp2.innerHTML == false){
+    dot2.style.display = 'none'
+};
+document.querySelector('.bren').playbackRate = 1.2;
+function timing(){
+    div.innerHTML = getTime()
+}
+
+setInterval(timing,1)
+let title = document.getElementById("title")
+    title.style.paddingBottom = '-9px'
+
+    </script>
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
